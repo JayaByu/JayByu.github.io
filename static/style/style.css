@@ -852,6 +852,9 @@ body {
   .contact-con .form-con .send {
     font-size: 2vw;
   }
+  .medsos {
+    padding: 10%;
+  }
   .medsos a {
     border-radius: 100%;
   }
@@ -862,6 +865,9 @@ body {
     width: 6vw;
   }
   .medsos .yutup a img {
+    width: 6vw;
+  }
+  .medsos .whatsapp a img {
     width: 6vw;
   }
   .copyright {

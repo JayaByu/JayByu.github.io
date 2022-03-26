@@ -741,7 +741,7 @@ body{
     }
 
     .medsos{
-
+        padding: 10%;
             a{
                 border-radius: 100%;
             }
@@ -761,6 +761,13 @@ body{
             }
         }
         .yutup{
+            a{
+                img{
+                    width: 6vw;
+                }
+            }
+        }
+        .whatsapp{
             a{
                 img{
                     width: 6vw;
