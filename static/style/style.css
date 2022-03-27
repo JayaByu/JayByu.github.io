@@ -581,7 +581,6 @@ body {
 
 .contact-con {
   width: 100%;
-  height: 90vh;
   background-color: #eee;
 }
 
@@ -594,117 +593,56 @@ body {
   color: #fff;
 }
 
-.contact-con .isi-contact {
-  margin: auto;
-  width: 70%;
-  background-color: #eee;
+.sosmed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  max-width: 1050px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 5%;
-}
-
-.form-con {
-  width: 80%;
-  color: #3E2C41;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 1px;
-  font-family: "Saira Condensed", sans-serif;
+  height: 50vh;
 }
 
-.form-con input {
-  resize: none;
-  border: none;
-  outline: none;
-  border-bottom: solid #E7E6E1;
-  background-color: #eee;
-  letter-spacing: 1px;
-}
-
-.form-con .in {
-  font-size: 1vw;
-  font-family: "Saira Condensed", sans-serif;
-  width: 100%;
-  height: 4vh;
-  margin-top: 4%;
-  color: #3E2C41;
-}
-
-.form-con textarea {
-  margin-top: 4%;
-  width: 100%;
-  height: 30vh;
-  border-bottom: #E7E6E1;
-  font-size: 1vw;
-  font-family: "Saira Condensed", sans-serif;
-  color: #3E2C41;
-  letter-spacing: 1px;
-}
-
-.form-con .msg {
-  resize: none;
-  border: none;
-  outline: none;
-  background-color: #eee;
-  border-bottom: solid #E7E6E1;
-}
-
-.form-con button {
-  border: none;
-  outline: none;
-}
-
-.form-con .send {
-  width: 40%;
-  height: 3vh;
-  font-size: 1vw;
-  font-family: "Saira Condensed", sans-serif;
-  margin-top: 5%;
-  cursor: pointer;
-  color: #3E2C41;
-}
-
-.form-con .send:hover {
-  background-color: #E7E6E1;
-  -webkit-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
-}
-
-.medsos {
+.sosmed ul {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  z-index: 5;
 }
 
-.medsos a {
-  border-radius: 50%;
-  background-color: #CDC7BE;
+.sosmed ul li {
+  position: relative;
+  list-style: none;
+  margin: 2vw;
 }
 
-.medsos a:hover {
-  background-color: #ddd;
-  -webkit-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
+.sosmed ul li a {
+  color: #3E2C41;
+  width: 6vw;
+  height: 13vh;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 3em;
+  border-radius: 10px;
+  border: 1px solid rgba(192, 182, 182, 0.1);
+  -webkit-box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sosmed ul li a:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
 }
 
 .copyright {
@@ -834,9 +772,6 @@ body {
   .space {
     height: 10vh;
   }
-  .contact-con {
-    height: 70vh;
-  }
   .contact-con .judul-contact {
     font-size: 6rem;
   }
@@ -852,23 +787,12 @@ body {
   .contact-con .form-con .send {
     font-size: 2vw;
   }
-  .medsos {
-    padding: 10%;
+  .sosmed ul li {
+    margin: 3vw;
   }
-  .medsos a {
-    border-radius: 100%;
-  }
-  .medsos .ig a img {
-    width: 6vw;
-  }
-  .medsos .ghub a img {
-    width: 6vw;
-  }
-  .medsos .yutup a img {
-    width: 6vw;
-  }
-  .medsos .whatsapp a img {
-    width: 6vw;
+  .sosmed ul li a {
+    width: 15vw;
+    height: 8vh;
   }
   .copyright {
     font-size: 2vw;

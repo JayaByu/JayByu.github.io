@@ -470,7 +470,7 @@ body{
 
 .contact-con{
     width: 100%;
-    height: 90vh;
+    // height: 80vh;
     background-color: #eee;
     .judul-contact{
         text-align: center;
@@ -480,95 +480,42 @@ body{
         text-shadow: -10px 5px 15px rgba(0,0,0,.19);
         color: #fff;
     }
-    .isi-contact{
-        margin: auto;
-        width: 70%;
-        background-color: #eee;
-        display: flex;
-        flex-direction: row;
-        max-width: 1050px;
-        justify-content: space-between;
-        padding: 5%;
-    }
-
 }
-.form-con{
-    width: 80%;
-    color: #3E2C41;
+.sosmed{
+    display: flex;
     justify-content: center;
     align-items: center;
-    letter-spacing: 1px;
-    font-family: $NAMA;
+    height: 50vh;   
 
-    input{
-        resize: none;
-        border: none;
-        outline: none;
-        border-bottom: solid #E7E6E1;
-        background-color: #eee;
-        letter-spacing: 1px;
-    }
+    ul{
+        position: relative;
+        display: flex;
+        z-index: 5;
+        
+        li{
+            position: relative;
+            list-style: none;
+            margin: 2vw;    
+            a{
+                color: #3E2C41;
+                width: 6vw;
+                height: 13vh;
+                text-align: center;
+                position: relative;
+                text-decoration: none;
+                vertical-align: middle;
+                display: table-cell;
+                font-size: 3em;
+                border-radius: 10px;
+                border: 1px solid rgba(192, 182, 182, 0.1);
+                box-shadow: 0 5px 45px rgba(0,0,0,0.1);
+                backdrop-filter: blur(2px);
+                transition: 0.5s;
 
-    .in{
-        font-size: 1vw;
-        font-family: $NAMA;
-        width: 100%;
-        height: 4vh;
-        margin-top: 4%;
-        color: #3E2C41;
-
-    }
-    textarea{
-        margin-top: 4%;
-        width: 100%;
-        height: 30vh;
-        border-bottom: #E7E6E1;
-        font-size: 1vw;
-        font-family: $NAMA;
-        color: #3E2C41;
-        letter-spacing: 1px;
-    }
-    
-    .msg{
-        resize: none;
-        border: none;
-        outline: none;
-        background-color: #eee;
-        border-bottom: solid #E7E6E1;
-    }
-
-    button{
-        border: none;
-        outline: none;
-    }
-
-    .send{
-        width: 40%;
-        height: 3vh;
-        font-size: 1vw;
-        font-family: $NAMA;
-        margin-top: 5%;
-        cursor: pointer;
-        color: #3E2C41;
-
-        &:hover{
-            background-color: #E7E6E1;
-            transition: all .6s ease-in-out;
-        }
-    }
-}
-
-.medsos{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-
-    a{
-        border-radius: 50%;
-        background-color: #CDC7BE;
-        &:hover{
-            background-color: #ddd;
-            transition: all .6s ease-in-out;
+                &:hover{
+                    transform: translateY(-20px);
+                }
+            }
         }
     }
 
@@ -720,7 +667,7 @@ body{
     }
 
     .contact-con{
-        height: 70vh;
+        // height: 70vh;
         .judul-contact{
             font-size: 6rem;
         }
@@ -740,37 +687,13 @@ body{
         }
     }
 
-    .medsos{
-        padding: 10%;
-            a{
-                border-radius: 100%;
-            }
-        
-        .ig{
-            a{
-                img{
-                    width: 6vw;
-                }
-            }
-        }
-        .ghub{
-            a{
-                img{
-                    width: 6vw;
-                }
-            }
-        }
-        .yutup{
-            a{
-                img{
-                    width: 6vw;
-                }
-            }
-        }
-        .whatsapp{
-            a{
-                img{
-                    width: 6vw;
+    .sosmed{
+        ul{
+            li{
+                margin: 3vw;
+                a{
+                    width: 15vw;
+                    height: 8vh;
                 }
             }
         }
