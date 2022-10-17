@@ -176,6 +176,20 @@ body {
 .moreme .con_me .tegal:hover {
   background-color: #B4E197;
 }
+.moreme .con_me .TegalProject {
+  border-bottom: 4px solid #9CFF2E;
+  box-shadow: #9CFF2E;
+}
+.moreme .con_me .TegalProject:hover {
+  background-color: #9CFF2E;
+}
+.moreme .con_me .bncc {
+  border-bottom: 4px solid #47B5FF;
+  box-shadow: #47B5FF;
+}
+.moreme .con_me .bncc:hover {
+  background-color: #47B5FF;
+}
 .moreme .con_me .laget {
   border-bottom: 4px solid #B0EACD;
   box-shadow: #B0EACD;
