@@ -155,7 +155,7 @@ body {
 .moreme .con_me .deskripsi_aboutme {
   margin: auto;
   width: 65%;
-  font-size: 2.4vw;
+  font-size: 2.2vw;
 }
 .moreme .con_me a {
   text-decoration: none;
@@ -168,6 +168,13 @@ body {
 }
 .moreme .con_me .sunib:hover {
   background-color: #7DEDFF;
+}
+.moreme .con_me .tegal {
+  border-bottom: 4px solid #B4E197;
+  box-shadow: #B4E197;
+}
+.moreme .con_me .tegal:hover {
+  background-color: #B4E197;
 }
 .moreme .con_me .laget {
   border-bottom: 4px solid #B0EACD;
