@@ -81,6 +81,18 @@ body{
                     opacity:1
                 }
             }
+            a{
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.3s cubic-bezier(.33,.66,.66,.1);
+            }
+            .tegal{
+            border-bottom: 4px solid #FFB84C;
+            box-shadow: #FFB84C;
+            &:hover{
+                background-color: #FFB84C;
+            }
+        }
         }
 }
 
