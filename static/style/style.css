@@ -719,7 +719,8 @@ body {
   }
   .jet img {
     width: 10rem;
-    transform: translateY(55%);
+    position: relative;
+    transform: translateY(25%);
   }
   .slider .box .details h1 {
     font-size: 6vw;

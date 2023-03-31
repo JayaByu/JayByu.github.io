@@ -829,7 +829,8 @@ body{
         }
         img{
             width: 10rem;
-            transform: translateY(55%);
+            position: relative;
+            transform: translateY(25%);
         }
     }
     .slider{
