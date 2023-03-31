@@ -192,7 +192,7 @@ body {
 .skill img {
   position: absolute;
   left: 30%;
-  transform: translateY(720%);
+  transform: translateY(760%);
   -o-object-fit: cover;
      object-fit: cover;
   pointer-events: none;
@@ -210,7 +210,7 @@ body {
     width: 20vw;
     position: relative;
     left: -10%;
-    transform: translateY(100%);
+    transform: translateY(110%);
   }
 }
 
@@ -302,6 +302,57 @@ body {
   transform-origin: left top;
   transform: scale(1, 1);
 }
+.experience .exp-PTLUI {
+  margin: auto;
+  width: 70vw;
+  padding-top: 3.4vh;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5vw;
+  font-family: "Saira Condensed", sans-serif;
+  color: #3E2C41;
+}
+.experience .exp-PTLUI .PTLUI {
+  display: block;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: #62CDFF;
+}
+.experience .exp-PTLUI .PTLUI:hover {
+  color: #537FE7;
+}
+.experience .exp-PTLUI .PTLUI::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #62CDFF;
+  width: 45%;
+  height: 7%;
+  bottom: 8%;
+}
+.experience .exp-PTLUI .PTLUI:hover::before {
+  transform-origin: right top;
+  transform: scale(0, 1);
+}
+.experience .exp-PTLUI .PTLUI::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #537FE7;
+  width: 45%;
+  height: 7%;
+  bottom: 8%;
+  pointer-events: none;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform 0.5s cubic-bezier(0.37, 0.16, 0.12, 1);
+}
+.experience .exp-PTLUI .PTLUI:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
 
 .jet {
   width: 100%;
@@ -321,7 +372,7 @@ body {
 }
 .jet img {
   position: relative;
-  transform: translateY(230%);
+  transform: translateY(250%);
 }
 .jet h1 {
   font-family: "Bebas Neue", cursive;
@@ -538,7 +589,7 @@ body {
   .skill img {
     width: 15rem;
     left: -20%;
-    transform: translateY(85%);
+    transform: translateY(88%);
   }
   .language {
     height: 70vh;
@@ -560,7 +611,10 @@ body {
     font-size: 6rem;
   }
   .experience .exp-tokotronik {
-    font-size: 2.8vw;
+    font-size: 2.9vw;
+  }
+  .experience .exp-PTLUI {
+    font-size: 2.9vw;
   }
   .jet {
     height: 20vh;
@@ -578,7 +632,7 @@ body {
   }
   .jet img {
     width: 15rem;
-    transform: translateY(260%);
+    transform: translateY(280%);
   }
   .container {
     height: 50vh;
