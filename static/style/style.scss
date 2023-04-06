@@ -333,7 +333,7 @@ body{
                 height: 7%;
                 bottom: 8%;
             }
-            &:hover::before{
+            &:hover::before {
                 transform-origin: right top;
                 transform: scale(0,1);
             }
