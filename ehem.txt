@@ -1,0 +1,54 @@
+sudo iscsiadm -m discovery -t st -p 192.168.20.100
+sudo iscsiadm -m node --targetname iqn.1991-05.com.microsoft:win-d6bjfs1meal-kalilinuxvmware-targe -p 192.168.20.100 --login
+sudo iscsiadm --mode node --targetname iqn.1991-05.com.microsoft:win-d6bjfs1meal-kalilinuxvmware-targe -p 192.168.20.100 --login
+clear
+sudo iscsiadm --mode node --targetname iqn.1991-05.com.microsoft:win-d6bjfs1meal-kalilinuxvmware-target -p 192.168.20.100 --login
+sudo pvdisplay
+sudo lsblk 
+sudo fdisk /dev/sdc
+lsblk 
+sudo mkfs.ext4 /dev/sdc1
+sudo lsblk 
+cd ISCSI
+touch a.txt
+cd ..
+clear
+sudo touch ISCSI/a.neko
+sudo vim ISCSI/a.neko
+sudo cat ISCSI/a.neko
+sudo lsblk
+sudo apt-get update && sudo apt install open-iscsi  && sudo apt-get upgrade -y
+sudo lsblk 
+sudo fdisk /dev/sdb
+sudo lsblk 
+ls
+mkdir ISCSI
+sudo apt install lvm2
+pvcreate /dev/sdb1
+sudo pvcreate /dev/sdb1
+sudo pvdisplay
+sudo vgcreate byuVG /dev/sdb1
+pvdisplay
+sudo pvdisplay
+sudo vgdisplay
+sudo lvcreate -L 15G -n byuLV byuVG
+sudo lsblk 
+sudo mkfs.ext4 /dev/byuVG/byuLV
+ls
+sudo mount -t ext4 /dev/byuVG/byuLV ISCSI
+sudo mount -a
+ls
+sudo pvcreate /dev/sdc1
+sudo vgcreate byuVG /dev/sdc1
+sudo vgextend byuVG /dev/sdc1
+sudo vgextend -L 50G /dev/byuVG/byuLV
+sudo vgextend -L+50G /dev/byuVG/byuLV
+sudo vgextend -L50G /dev/byuVG/byuLV
+sudo lgextend -L+50G /dev/byuVG/byuLV
+sudo lvextend -L+50G /dev/byuVG/byuLV
+sudo mount /dev/byuVG/byuLV ISCSI
+sudo resize2fs /dev/byuVG/byuLV
+sudo lsblk 
+sudo ip a
+ip a
+reboot
